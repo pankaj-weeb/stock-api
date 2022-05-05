@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/quotes', quotesRouter);
-app.use('/data', dataRouter);
+app.use('/api', dataRouter);
 
 
 module.exports = app;
