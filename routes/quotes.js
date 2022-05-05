@@ -8,7 +8,6 @@ router.get('/', async function (req, res, next) {
     //res.json(await quotes.getMultiple(req.query.page));
     res.json(["data", "data1"]);
 
-
   } catch (err) {
     console.error(`Error while getting quotes `, err.message);
     res.status(err.statusCode || 500).json({ 'message': err.message });
